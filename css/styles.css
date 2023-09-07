@@ -149,6 +149,48 @@ nav li a:hover {
 #btn-primary {
   margin-right: 20px;
 }
+/* gamer styles  */
+.gamer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+  background: #fff9fc;
+}
+.gamer-img {
+  max-width: 50%;
+}
+.gamer-content {
+  max-width: 50%;
+  text-align: justify;
+  text-align-last: right;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 24px;
+}
+.section-description {
+  margin-bottom: 24px;
+  color: #534c64;
+  padding-left: 370px;
+}
+.special-text {
+  margin-top: 24px;
+}
+.purpose-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #534c64;
+}
+.quote-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #534c64;
+}
 
 /* responsive  */
 /* mobile devices  */
@@ -161,7 +203,8 @@ nav li a:hover {
     padding: 20px;
   }
   nav,
-  nav ul {
+  nav ul,
+  .gamer {
     flex-direction: column;
   }
   .icon-div {
@@ -171,7 +214,8 @@ nav li a:hover {
   .banner {
     flex-direction: column-reverse;
   }
-  .banner-content {
+  .banner-content,
+  .gamer-content {
     margin-top: 24px;
     padding: 10px 10px;
     max-width: 100%;
@@ -191,8 +235,23 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
   }
-  .banner-img {
+  .banner-img,
+  .gamer-img {
     max-width: 100%;
+  }
+  .gamer-content {
+    text-align: center;
+    text-align-last: center;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .section-description {
+    font-size: 16px;
+    padding-left: 0px;
+  }
+  #quote-text {
+    font-size: 24px;
   }
 }
 /* tablet devices  */
@@ -201,7 +260,8 @@ nav li a:hover {
     padding: 60px;
   }
   nav,
-  nav ul {
+  nav ul,
+  .gamer {
     flex-direction: column;
   }
   .icon-div {
@@ -211,7 +271,8 @@ nav li a:hover {
   .banner {
     flex-direction: column-reverse;
   }
-  .banner-content {
+  .banner-content,
+  .gamer-content {
     margin-top: 24px;
     padding: 10px 24px;
     max-width: 100%;
@@ -222,7 +283,22 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
   }
-  .banner-img {
+  .banner-img,
+  .gamer-img {
     max-width: 100%;
+  }
+  .gamer-content {
+    text-align: center;
+    text-align-last: center;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .section-description {
+    font-size: 16px;
+    padding-left: 0px;
+  }
+  #quote-text {
+    font-size: 24px;
   }
 }
