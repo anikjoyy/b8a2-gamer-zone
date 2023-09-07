@@ -191,6 +191,90 @@ nav li a:hover {
   font-weight: 700;
   color: #534c64;
 }
+.game {
+  max-width: 1140px;
+  margin: 130px auto;
+}
+.game-content {
+  text-align: center;
+}
+.game-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0b0223;
+  margin-bottom: 24px;
+}
+.game-title span {
+  background: linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.game-description {
+  color: #534c64;
+  margin-bottom: 32px;
+}
+.game-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+/* =========  */
+.card {
+  position: relative;
+  width: 342px;
+  height: 400px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s, transform 0.3s;
+}
+.card-content:hover img {
+  filter: blur(5px);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card-content:hover .overlay {
+  opacity: 1;
+}
+.play-icon {
+  font-size: 20px;
+  color: #ff42a5;
+  margin-bottom: 10px;
+}
+.card-content:hover .play-icon,
+.card-content:hover .card-text {
+  opacity: 1;
+}
+.card-text {
+  margin-top: 20px;
+  color: #534c64;
+  font-weight: 500;
+}
+/* =========  */
 
 /* responsive  */
 /* mobile devices  */
@@ -204,7 +288,8 @@ nav li a:hover {
   }
   nav,
   nav ul,
-  .gamer {
+  .gamer,
+  .game-cards {
     flex-direction: column;
   }
   .icon-div {
@@ -243,15 +328,27 @@ nav li a:hover {
     text-align: center;
     text-align-last: center;
   }
-  .section-title {
+  .section-title,
+  .game-title {
     font-size: 32px;
   }
-  .section-description {
+  .section-description,
+  .game-description {
     font-size: 16px;
     padding-left: 0px;
   }
   #quote-text {
     font-size: 24px;
+  }
+  .game-cards {
+    justify-content: center;
+    align-items: center;
+    gap: 20;
+  }
+  .card {
+    width: 90%;
+    height: 100%;
+    text-align: center;
   }
 }
 /* tablet devices  */
@@ -261,7 +358,8 @@ nav li a:hover {
   }
   nav,
   nav ul,
-  .gamer {
+  .gamer,
+  .game-cards {
     flex-direction: column;
   }
   .icon-div {
@@ -291,14 +389,21 @@ nav li a:hover {
     text-align: center;
     text-align-last: center;
   }
-  .section-title {
-    font-size: 32px;
-  }
   .section-description {
     font-size: 16px;
     padding-left: 0px;
   }
   #quote-text {
     font-size: 24px;
+  }
+  .game-cards {
+    justify-content: center;
+    align-items: center;
+    gap: 20;
+  }
+  .card {
+    width: 90%;
+    height: 100%;
+    text-align: center;
   }
 }
