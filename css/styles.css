@@ -8,6 +8,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+.btn-primary {
+  color: #fff;
+  background: #ff42a5;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+.btn-primary:hover {
+  background: #4ec5f7;
+}
+.btn-secondary {
+  color: #fff;
+  background: #4ec5f7;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+.btn-secondary:hover {
+  background: #ff42a5;
+}
 
 /* header styles  */
 header {
@@ -76,20 +104,95 @@ nav li a:hover {
   font-size: 24px;
 }
 
+/* banner styles  */
+.banner {
+  padding: 70px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  background-color: #faf7fd;
+  max-width: 50%;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 48px;
+  color: #0b0223;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-goat {
+  font-size: 95px;
+  font-weight: 800;
+  background: linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.banner-info {
+  font-size: 20px;
+  color: #534c64;
+  font-weight: 500;
+  padding: 10px;
+}
+.color-icon {
+  margin-right: 10px;
+  color: #ff42a5;
+}
+.user-icon {
+  margin-right: 10px;
+}
+.button-group {
+  padding: 20px;
+}
+#btn-primary {
+  margin-right: 20px;
+}
+
 /* responsive  */
 /* mobile devices  */
 @media screen and (max-width: 576px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 15px;
+  }
   header {
-    padding: 60px;
+    padding: 20px;
   }
   nav,
   nav ul {
     flex-direction: column;
   }
-
   .icon-div {
     margin-bottom: 40px;
     justify-content: center;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    margin-top: 24px;
+    padding: 10px 10px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-goat {
+    font-size: 75px;
+  }
+  .banner-info {
+    font-size: 16px;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-img {
+    max-width: 100%;
   }
 }
 /* tablet devices  */
@@ -104,5 +207,22 @@ nav li a:hover {
   .icon-div {
     margin-bottom: 40px;
     justify-content: center;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    margin-top: 24px;
+    padding: 10px 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-img {
+    max-width: 100%;
   }
 }
